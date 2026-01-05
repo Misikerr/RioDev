@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	}
 
-	document.querySelectorAll('.navbar__links a[href^="#"]').forEach(link => {
+	document.querySelectorAll('.navbar a[href^="#"]').forEach(link => {
 		link.addEventListener('click', function (e) {
 			const targetId = this.getAttribute('href').slice(1);
 			const target = document.getElementById(targetId);
